@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>PaletteFlow</title>
+  </head>
+
+  <body class="bg-[#e9f1f3] text-[#021a24] min-h-screen overflow-x-hidden">
+    <main class="min-h-screen px-4 py-12 sm:px-6 md:px-10">
+      <section class="max-w-7xl mx-auto text-center">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight"
+        >
+          Palette<span class="text-[#4f8cff]">Flow</span>
+        </h1>
+
+        <p
+          class="mt-5 text-base sm:text-lg md:text-xl text-[#4b6570] leading-relaxed max-w-2xl mx-auto"
+        >
+          Generate beautiful color palettes instantly with curated colors and
+          unlimited combinations.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-8">
+          <button
+            onclick="setStyle('pastel')"
+            class="px-5 py-2 rounded-2xl bg-white shadow-md font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+          >
+            Pastel
+          </button>
+
+          <button
+            onclick="setStyle('neon')"
+            class="px-5 py-2 rounded-2xl bg-white shadow-md font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+          >
+            Neon
+          </button>
+
+          <button
+            onclick="setStyle('dark')"
+            class="px-5 py-2 rounded-2xl bg-white shadow-md font-medium transition-all duration-300 hover:scale-105 active:scale-95"
+          >
+            Dark
+          </button>
+        </div>
+
+        <button
+          onclick="generatePalette()"
+          class="mt-8 px-5 py-3 sm:px-6 bg-[#021a24] text-white rounded-2xl font-semibold hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg w-full sm:w-auto"
+        >
+          Generate Palette
+        </button>
+
+        <div
+          id="palette"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 mt-12"
+        ></div>
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
