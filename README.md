@@ -2,7 +2,7 @@
 
 PaletteFlow is a modern color palette generator built with HTML, Tailwind CSS, and JavaScript.
 
-Generate beautiful palettes instantly from curated color styles like pastel, neon, dark, and warm. Built to be fast, responsive, and simple.
+Generate beautiful palettes instantly from curated color styles like pastel, neon and dark. Built to be fast, responsive, and simple.
 
 ## ✨ Features
 
